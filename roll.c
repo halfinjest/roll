@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	if (argc > 1 && atoi(argv[1]) > 0)
 	{
-		char *pipRow = CONF_ROW, *pipCol = CONF_COL;
+		char *pipCol = CONF_COL, *pipRow = CONF_ROW;
 		int i, j, k, l = atoi(argv[1]), dice[l];
 		srand(time(NULL));
 		FOR_l(i) dice[i] = rand() % 6;
