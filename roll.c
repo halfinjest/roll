@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define FOR_NUMBER for (i = 0; i < number; i++)
 
 int main(int argc, char **argv)
 {
@@ -8,10 +9,10 @@ int main(int argc, char **argv)
 		char *pipRow = "000100010001101111", *pipCol = "020103123404424444";
 		int i, j, k, number = atoi(argv[1]), dice[number];
 		srand(time(NULL));
-		for (i = 0; i < number; i++) dice[i] = rand() % 6;
-		for (i = 0; i < number; i++) printf("   __________ ");
+		FOR_NUMBER dice[i] = rand() % 6;
+		FOR_NUMBER printf("   __________ ");
 		printf("\n");
-		for (i = 0; i < number; i++) printf("  |          |");
+		FOR_NUMBER printf("  |          |");
 		printf("\n");
 		for (i = 0; i < 3; i++)
 		{
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
 			}
 			printf("\n");
 		}
-		for (i = 0; i < number; i++) printf("  |__________|");
+		FOR_NUMBER printf("  |__________|");
 		printf("\n\n");
 	}
 	else printf("Usage: roll <integer 1..>\n");
