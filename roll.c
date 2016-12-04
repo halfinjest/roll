@@ -4,8 +4,8 @@
 #define CONF_ROW "000100010001101111"
 #define FOR_3(x) for (x = 0; x < 3; x++)
 #define FOR_l(x) for (x = 0; x < l; x++)
-#define PIP pipRow[3 * (ROW - '0') + k]
-#define ROW pipCol[3 * dice[j] + i]
+#define INST_ROW pipCol[3 * dice[j] + i]
+#define INST_PIP pipRow[3 * (INST_ROW - '0') + k]
 
 int main(int argc, char **argv)
 {
@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 				printf("  |  ");
 				FOR_3(k)
 				{
-					if (PIP - '0') printf("* ");
+					if (INST_PIP - '0') printf("* ");
 					else printf("  ");
 				}
 				printf("  |");
