@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define CONF_COL "020103123404424444"
 #define CONF_ROW "000100010001101111"
 #define FOR_3(x) for (x = 0; x < 3; x++)
