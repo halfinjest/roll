@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define FOR_3(x) for (x = 0; x < 3; x++)
 #define FOR_l(x) for (x = 0; x < l; x++)
 
 int main(int argc, char **argv)
@@ -14,12 +15,12 @@ int main(int argc, char **argv)
 		printf("\n");
 		FOR_l(i) printf("  |          |");
 		printf("\n");
-		for (i = 0; i < 3; i++)
+		FOR_3(i)
 		{
 			FOR_l(j)
 			{
 				printf("  |  ");
-				for (k = 0; k < 3; k++)
+				FOR_3(k)
 				{
 					if (pipRow[3 * (pipCol[3 * dice[j] + i] - '0') + k] - '0') printf("* ");
 					else printf("  ");
