@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define FOR_NUMBER for (i = 0; i < number; i++)
+#define FOR_L for (i = 0; i < l; i++)
 
 int main(int argc, char **argv)
 {
 	if (argc > 1 && atoi(argv[1]) > 0)
 	{
 		char *pipRow = "000100010001101111", *pipCol = "020103123404424444";
-		int i, j, k, number = atoi(argv[1]), dice[number];
+		int i, j, k, l = atoi(argv[1]), dice[l];
 		srand(time(NULL));
-		FOR_NUMBER dice[i] = rand() % 6;
-		FOR_NUMBER printf("   __________ ");
+		FOR_L dice[i] = rand() % 6;
+		FOR_L printf("   __________ ");
 		printf("\n");
-		FOR_NUMBER printf("  |          |");
+		FOR_L printf("  |          |");
 		printf("\n");
 		for (i = 0; i < 3; i++)
 		{
-			for (j = 0; j < number; j++)
+			for (j = 0; j < l; j++)
 			{
 				printf("  |  ");
 				for (k = 0; k < 3; k++)
@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 			}
 			printf("\n");
 		}
-		FOR_NUMBER printf("  |__________|");
+		FOR_L printf("  |__________|");
 		printf("\n\n");
 	}
 	else printf("Usage: roll <integer 1..>\n");
