@@ -16,11 +16,7 @@ void roll(int length, int *dice)
 		for (j = 0; j < length; j++)
 		{
 			printf("  |  ");
-			for (k = 0; k < 3; k++)
-			{
-				if (INST_PIP) printf("* ");
-				else printf("  ");
-			}
+			for (k = 0; k < 3; k++) INST_PIP ? printf("* ") : printf("  ");
 			printf("  |");
 		}
 		printf("\n");
