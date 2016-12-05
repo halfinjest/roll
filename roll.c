@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define CONF_COL "020103123404424444"
 #define CONF_ROW "000100010001101111"
