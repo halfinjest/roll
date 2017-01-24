@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 		srand(time(NULL));
 		for (i = 0; i < length; i++) dice[i] = rand() % 6;
 		roll(length, dice);
+		printf("\n\n");
 	}
 	else printf("Usage: roll <integer 1..>\n");
 	return 0;
