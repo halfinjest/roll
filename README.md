@@ -1,6 +1,6 @@
 # roll
 
-A dice rolling program that uses number strings to configure the pip arrangements.
+A dice rolling program that uses digit strings as the pip arrangements.
 
 ## Usage
 
