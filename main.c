@@ -7,10 +7,10 @@ int main(int argc, char **argv)
 {
 	if (argc > 1 && atoi(argv[1]) > 0)
 	{
-		int i, length = atoi(argv[1]), *dice = malloc(sizeof(int) * length);
+		int i, count = atoi(argv[1]), *dice = malloc(sizeof(int) * count);
 		srand(time(NULL));
-		for (i = 0; i < length; i++) dice[i] = rand() % 6;
-		roll(length, dice);
+		for (i = 0; i < count; i++) dice[i] = rand() % 6;
+		roll(count, dice);
 		printf("\n\n");
 	}
 	else printf("Usage: roll <integer 1..>\n");
