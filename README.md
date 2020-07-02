@@ -10,4 +10,4 @@ The program is compiled using the GNU Compiler Collection:
 
 Next, the compiled output is executed:
 
-`./roll <integer 1..>`
+`./roll <integer 1..6>`
